@@ -10,7 +10,7 @@ package fer.day03.demo01;
 
 1. 导包：也就是指需要使用的类，在什么位置
 import 包名称.类名称
-import fer.day03.demo01.Student
+import fer.day03.fer.day09.demo01.Student
 对于和当前类属于同一个包的情况，可以省略导包语句不写
 
 2. 创建，格式

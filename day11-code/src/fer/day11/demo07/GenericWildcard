@@ -1,0 +1,12 @@
+### 泛型通配符
+当使用泛型类或者接口时，传递的数据中，泛型类型不确定，可以通过通配符<?>表示
+但是一旦使用泛型的通配符后，只能使用 Object 类中的共性方法，集合中元素自身方法无法使用
+
+泛型的上限限定: ? extends E  代表使用的泛型只能是 E 类型的子类/本身
+泛型的下限限定: ? super E    代表使用的泛型只能是 E 类型的父类/本身
+
+// 此时的泛型 ? ,必须是 Number 类型或者 Number 类型的子类
+public static void getElement1(Collection<? extends Number> coll) {}
+
+// 此时的泛型?, 必须是 Number 类型或者 Number 类型的父类
+public static vod getElement2(Collection<? super Number> coll) {}

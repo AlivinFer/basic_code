@@ -1,0 +1,19 @@
+java.util.Iterator
+Iterator 接口也是 Java 集合中的一员，但它与 Collection、Map 接口有所不同
+Collection 接口与 Map 接口主要用于存储元素，而 Iterator(迭代器) 主要用于迭代访问(遍历) Collection 中的元素
+获取迭代器的方法：
+public Iterator iteration(): 获取集合对应的迭代器，用来遍历集合中的元素
+【迭代】：即 Collection 集合元素的通用获取方式。在取元素之前先要判断集合中有没有元素，如果有，就把这个元素
+取出来，继续在判断，如果还有就再取出来。一直把集合中的所有元素全部取出
+常用方法：
+    boolean hasNext() 如果仍有元素可以迭代，则返回 true
+        判断集合中还有没有下一个元素，有就返回 true，没有则返回 false
+    E next() 返回迭代的下一个元素
+Iterator 迭代器，是一个接口，无法直接使用，需要使用 Iterator 接口实现的类对象，获取实现类的方式比较特殊
+Collection 接口中有一个方法，叫 iterator(),这个方法返回的就是迭代器的实现类对象
+    Iterator<E> iterator() 返回在此 collection 的元素上进行迭代的迭代器
+
+迭代器的使用步骤：
+    1. 使用集合中的方法 iterator() 获取迭代器的实现类对象，使用 Iterator 接口接收(多态)
+    2. 使用 Iterator 接口中的方法 hasNext 判断还有没有下一个元素
+    3. 使用 Iterator 接口中的方法 next 取出集合的下一个元素

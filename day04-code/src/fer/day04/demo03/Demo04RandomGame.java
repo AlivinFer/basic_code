@@ -12,7 +12,7 @@ import java.util.Scanner;
 用代码模拟猜数字的小游戏
 
 思路：
-1. 首先需要产生一个随机数字，并且一旦产生不再变化 用 Random 的 nextInt 方法
+1. 首先需要产生一个随机数字，并且一旦产生就不再变化 用 Random 的 nextInt 方法
 2. 需要键盘输入，所以用到了 Scanner
 3. 获取键盘输入的数字，用 Scanner 当中的 nextInt 方法
 4. 已经得到了两个数字，判断（if）一下

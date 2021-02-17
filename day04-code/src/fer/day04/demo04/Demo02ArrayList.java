@@ -23,7 +23,7 @@ import java.util.ArrayList;
 public class Demo02ArrayList {
     public static void main(String[] args) {
         // 创建一个 ArrayList 集合，集合的名称是 list，里面装的全都是 String 字符串类型的数据
-        // 备注：从 JDK 1.7 开始，右侧的尖括号内部不屑内容，但是 <> 本身还是要写的
+        // 备注：从 JDK 1.7 开始，右侧的尖括号内部不写内容，但是 <> 本身还是要写的
         ArrayList<String> list = new ArrayList<>();
         System.out.println(list);
 

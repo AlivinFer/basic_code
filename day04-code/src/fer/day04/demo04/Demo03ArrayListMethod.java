@@ -16,7 +16,7 @@ public boolean add(E e): 向集合当中添加元素，参数类型和泛型一�
 
 public E get(int index): 从集合当中获取元素，参数是索引编号，返回值就是对应位置的元素
 
-public E remove(int index): 从集合当中删除元素，参数是索引编号，返回值就是呗删除掉的元素
+public E remove(int index): 从集合当中删除元素，参数是索引编号，返回值就是被删除掉的元素
 
 public int size(): 获取集合的尺寸长度，返回值就是集合当中包含的元素个数
  */
@@ -51,8 +51,8 @@ public class Demo03ArrayListMethod {
         System.out.println("集合的长度是：" + size);
 
         // 遍历数组
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
+        for (String s : list) {
+            System.out.println(s);
         }
 
 

@@ -11,8 +11,8 @@ public class Demo06ArrayReverse {
         int[] array = {10, 20, 30, 40, 50};
 
         // 遍历原数组元素
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
+        for (int value : array) {
+            System.out.println(value);
         }
         System.out.println("============");
 
@@ -23,9 +23,9 @@ public class Demo06ArrayReverse {
             array[max] = temp;
         }
 
-        // 再次打印遍历后输出数组后来的样子
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
+        // 打印反转后的数组
+        for (int value : array) {
+            System.out.println(value);
         }
     }
 }

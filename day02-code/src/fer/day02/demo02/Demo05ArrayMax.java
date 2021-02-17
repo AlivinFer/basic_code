@@ -16,6 +16,6 @@ public class Demo05ArrayMax {
                 max = array[i];
             }
         }
-        System.out.println("最小值：" + max);
+        System.out.println("最大值：" + max);
     }
 }

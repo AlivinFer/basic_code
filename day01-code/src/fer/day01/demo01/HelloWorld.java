@@ -7,6 +7,5 @@ public class HelloWorld {
     public static void main(String[] args) {
         // sout 快速生成
         System.out.println("Hello, World!");
-    // 1
     }
 }

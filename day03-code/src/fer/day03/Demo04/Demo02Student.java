@@ -17,9 +17,5 @@ public class Demo02Student {
         // 如果需要改变对象当中的成员变量数据内容，仍然需要使用 setXXX 方法
         stu2.setAge(21);
         System.out.println("姓名：" + stu2.getName() + ", 年龄：" + stu2.getAge());
-
-
-
-
     }
 }

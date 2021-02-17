@@ -29,7 +29,7 @@ public class Demo01PrintArray {
         System.out.println("=============");
 
         // 使用面向对象
-        // 找一个JDK给我们提供好的 Array 类
+        // 找一个JDK给我们提供好的 Arrays 类
         // 其中有一个 toString 方法，直接就能把数组变成想要的格式的字符串
         System.out.println(Arrays.toString(array));
     }

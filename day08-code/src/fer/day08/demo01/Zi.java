@@ -1,7 +1,5 @@
 package fer.day08.demo01;
 
-import fer.day08.demo01.Fu;
-
 /**
  * @author: Alivin Fer
  * @date: 2020/11/4 16:51

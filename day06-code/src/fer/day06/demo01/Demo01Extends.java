@@ -30,12 +30,12 @@ public class Demo01Extends {
     public static void main(String[] args) {
         // 创建了一个子类对象
         Teacher teacher = new Teacher();
-        teacher.method();
-        System.out.println(teacher.name);
+        teacher.method(); // 方法执行!
+        System.out.println(teacher.name); // 剑圣
 
         // 创建另一个子类对象
         Assistant assistant = new Assistant();
-        assistant.method();
+        assistant.method(); // 方法执行!
 
 
     }

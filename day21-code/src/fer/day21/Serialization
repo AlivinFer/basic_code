@@ -1,0 +1,27 @@
+### 序列化与反序列化
+
+序列化：把对象以流的方式，写入到文件中保存，也称为写对象
+       对象中包含的不仅仅是字符，使用字节流
+Person p = new Person("小花", 18);
+通过 writeObject(p); 写入到 person.txt 文件中(但保存的是字节，看不懂)
+ObjectOutputStream：对象的序列化流
+
+反序列化：把文件中保存的对象，以流的方式读取出来，叫做读对象
+         读取的文件保存的都是字节，使用字节流
+ObjectInputStream：对象的反序列化流
+readObject();
+
+static 关键字：静态关键字
+    静态优先于非静态加载到内存中(静态优先于对象进入到内存中)
+    被 static 修饰的成员变量不能被序列化，序列化的都是对象
+
+transient 关键字：瞬态关键字
+    被 transient 修饰的成员变量，不能被序列化
+
+java.io.PrintStream: 打印流
+    PrintStream 为其他输出流添加了功能，使它们能够方便地打印各种数据值表示形式。
+    它还提供其他两项功能。与其他输出流不同，PrintStream 永远不会抛出 IOException；
+    而是，异常情况仅设置可通过 checkError 方法测试的内部标志。
+    另外，为了自动刷新，可以创建一个 PrintStream；这意味着可在写入 byte 数组之后自动调用 flush 方法，
+    可调用其中一个 println 方法，或写入一个换行符或字节 ('\n')。
+

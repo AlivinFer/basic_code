@@ -30,9 +30,9 @@ public class Demo01toString {
         Demo01toString test = new Demo01toString();
 
         // 不重写 toString 的方法
-//        System.out.println(test);  // fer.day10.demo01.Demo01toString@10f87f48
+//        System.out.println(test);  // fer.day10.fer.day11.demo01c3p0.Demo01toString@10f87f48
 //        String s = "This is a String:" + test;
-//        System.out.println(s);  // This is a String:fer.day10.demo01.Demo01toString@10f87f48
+//        System.out.println(s);  // This is a String:fer.day10.fer.day11.demo01c3p0.Demo01toString@10f87f48
 
         // 对 toString 方法进行重载后
         System.out.println(test);  // Demo01toString{name='剑圣', age=20, gender=男}

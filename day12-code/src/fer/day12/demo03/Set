@@ -1,0 +1,35 @@
+### Set 集合无重复元素的原因
+
+set 集合在调用 add 方法的时候，add方法会调用元素的 hashCode 方法和 equals 方法，判断元素是否重复
+
+HashSet<String> set = new HashSet<>();
+String s1 = new String("abc");
+String s2 = new String("abc");
+set.add(s1);
+set.add(s2);
+set.add("right");
+set.add("sure");
+
+执行 set.add(s1);
+add 方法会调用 s1 的 hashCode 方法，计算字符串 "abc" 的哈希值，哈希值是 【96354】
+在集合中找有没有 【96354】 这个哈希值的元素，发现【没有】
+就会把 s1 存储到集合中
+
+执行 set.add(s2);
+add 方法会调用 s2 的 hashCode 方法，计算字符串 "abc" 的哈希值，哈希值是 【96354】
+在集合找有没有 【96354】 这个哈希值的元素，发现【有】 (哈希冲突)
+s2 会调用 equals 方法和哈希值相同的元素进行比较，s2.equals(s1) 返回 【true】
+两个元素的哈希值相同，equals 方法返回 true，认定两个元素相同
+就不会把 s2 存储到集合中
+
+执行 set.add("right");
+add 方法会调用 "right" 的 hashCode 方法，计算字符串 "right" 的哈希值，哈希值是 【1179395】
+在集合中找有没有 【1179395】 这个哈希值的元素，发现【没有】
+就会把 "right" 存储到集合中
+
+执行 set.add("sure");
+add 方法会调用 "sure" 的 hashCode 方法，计算字符串 "sure" 的哈希值，哈希值是 【1179395】
+在集合找有没有 【1179395】 这个哈希值的元素，发现【有】 (哈希冲突)
+"sure" 会调用 equals 方法和哈希值相同的元素进行比较，"sure".equals("right") 返回 【false】
+两个元素的哈希值相同，equals 方法返回 false，认定两个元素不相同
+就会把 "sure" 存储到集合中

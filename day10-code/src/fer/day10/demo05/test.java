@@ -12,7 +12,7 @@ public class test {
         char c = (char)(a + b);
         int d = a + b;
 
-        System.out.println(c);
-        System.out.println(d);
+        System.out.println(c); // Ã
+        System.out.println(d); // 195
     }
 }

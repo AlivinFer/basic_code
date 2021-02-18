@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="spring-beans-5.3.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/day25-code/libs/spring-beans-5.3.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day25-code/libs/spring-core-5.3.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day25-code/libs/spring-jcl-5.3.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day25-code/libs/spring-jdbc-5.3.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day25-code/libs/spring-tx-5.3.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

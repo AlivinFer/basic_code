@@ -25,15 +25,15 @@ public class Demo01Arrays {
         int[] intArray = {10, 20, 30};
         // 将int[] 数组按照默认格式变成字符串
         String intStr = Arrays.toString(intArray);
-        System.out.println(intStr);
+        System.out.println(intStr); // [10, 20, 30]
 
         int[] array1 = {12, 5, 10, 0, 33};
         Arrays.sort(array1);
-        System.out.println(Arrays.toString(array1));
+        System.out.println(Arrays.toString(array1)); // [0, 5, 10, 12, 33]
 
         String str2[] = {"aaa", "bbb", "ccc"};
         Arrays.sort(str2);
-        System.out.println(Arrays.toString(str2));
+        System.out.println(Arrays.toString(str2)); // [aaa, bbb, ccc]
 
 
 

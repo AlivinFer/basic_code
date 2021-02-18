@@ -22,7 +22,7 @@ public class Demo02ArraysPractise {
         
         // 倒序遍历
         for (int i = chars.length - 1; i >= 0; i--) {
-            System.out.println(chars[i]);
+            System.out.print(chars[i] + " ");
         }
     }
 }

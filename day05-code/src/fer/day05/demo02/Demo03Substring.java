@@ -18,8 +18,8 @@ public class Demo03Substring {
         String str2 = str1.substring(4);
         String str3 = str1.substring(4, 7);
         System.out.println(str1);
-        System.out.println(str2);
-        System.out.println(str3);
+        System.out.println(str2); // oWorld
+        System.out.println(str3); // oWo
         System.out.println("==========");
 
         // 下面这种写法，字符串的内容仍然没有改变

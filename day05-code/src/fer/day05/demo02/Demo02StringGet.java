@@ -19,7 +19,7 @@ public class Demo02StringGet {
     public static void main(String[] args) {
         // 获取字符串的长度
         int length = "what is your problem ?".length();
-        System.out.println(length);
+        System.out.println(length); // 22
 
         // 拼接字符串
         String str1 = "Hello";
@@ -27,19 +27,19 @@ public class Demo02StringGet {
         String str3 = str1.concat(str2);
         System.out.println(str1);
         System.out.println(str2);
-        System.out.println(str3);
+        System.out.println(str3); // HelloWorld
         System.out.println("==========");
 
         // 获取指定索引位置的单个字符
         char ch = "Beautiful".charAt(6);
-        System.out.println("在6号索引位置的字符是：" + ch);
+        System.out.println("在6号索引位置的字符是：" + ch); // f
         System.out.println("===========");
 
         // 查找参数字符串在本来字符串当中出现的第一次索引位置
         // 如果根本没有，返回 -1 值
         String original = "HelloWorldHelloWorld";
         int index = original.indexOf("llo");
-        System.out.println("llo 第一次出现的索引位置：" + index);
+        System.out.println("llo 第一次出现的索引位置：" + index); // 2
 
     }
 }

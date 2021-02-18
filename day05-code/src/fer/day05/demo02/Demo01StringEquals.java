@@ -27,24 +27,24 @@ public class Demo01StringEquals {
         char[] charArray = {'H', 'e', 'l', 'l', 'o'};
         String str3 = new String(charArray);
 
-        System.out.println(str1.equals(str2));
-        System.out.println(str2.equals(str3));
-        System.out.println(str3.equals(str1));
-        System.out.println("Hello".equals(str1));
+        System.out.println(str1.equals(str2)); // true
+        System.out.println(str2.equals(str3)); // true
+        System.out.println(str3.equals(str1)); // true
+        System.out.println("Hello".equals(str1)); // true
 
         String str4 = "hello";
-        System.out.println(str4.equals(str1));
+        System.out.println(str4.equals(str1)); // false 严格区分大小写
         System.out.println("============");
 
         String str5 = null;
-        System.out.println("abc".equals(str5));  // false 严格区分大小写
+        System.out.println("abc".equals(str5));  // false
 //        System.out.println(str5.equals("abc"));  // 不推荐，报错，空指针异常
         System.out.println("==========");
 
         String strA = "QweR";
         String strB = "qWer";
 
-        System.out.println(strA.equalsIgnoreCase(strB));
+        System.out.println(strA.equalsIgnoreCase(strB)); // true
 
     }
 }

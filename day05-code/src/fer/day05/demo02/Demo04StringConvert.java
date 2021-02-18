@@ -26,13 +26,13 @@ public class Demo04StringConvert {
 
         // 转换成为字节数组
         byte[] bytes = "Java".getBytes();
-        System.out.println(bytes[0]);
-        System.out.println(bytes.length);
+        System.out.println(bytes[0]); // 74
+        System.out.println(bytes.length); // 4
         System.out.println("==============");
 
         // 字符串的内容替换
         String str1 = "What are you talking about!".replace("a", "*");
-        System.out.println(str1);
+        System.out.println(str1); // Wh*t *re you t*lking *bout!
         System.out.println();
         System.out.println("=============");
 

@@ -20,8 +20,8 @@ public class Demo02StringBool {
         char[] charArray = {'a', 'b', 'c'};
         String str3 = new String(charArray);
 
-        System.out.println(str2 == str1);
-        System.out.println(str1 == str3);
-        System.out.println(str2 == str3);
+        System.out.println(str2 == str1); // true
+        System.out.println(str1 == str3); // false
+        System.out.println(str2 == str3); // false
     }
 }

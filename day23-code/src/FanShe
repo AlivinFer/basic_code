@@ -1,0 +1,51 @@
+### 反射：框架设计的灵魂
+    框架：半成品软件，可以在框架的基础上进行软件开放，简化代码
+基本概念：
+    将类的各个组成部分封装为其他对象。
+好处：
+    1. 可以在程序运行过程中，操作这些对象
+    2. 可以解耦，提高程序的可扩展性
+获取 class 对象的方式：
+    1. Class.forName("全类名")：将字节码文件加载进内存，返回 class 对象
+        · 多用于配置文件，将类名定义在配置文件中。读取文件，加载类
+    2. 类名.class：通过类名的属性 class 获取
+        · 多用于参数的传递
+    3. 对象.getClass()：getClass() 方法在 object 类中定义
+        · 多用于对象的获取字节码的方式
+结论：
+    同一个字节码文件(*.class)在一次程序运行过程中，只会被加载一次，不论通过哪一种方式获取的Class对象都是同一个
+
+Class 对象功能
+    获取功能：
+        1. 获取成员变量
+            Field getField(String name)
+                返回一个 Field 对象，它反映此 Class 对象所表示的类或接口的指定公共成员字段。
+            Field[] getFields()
+                返回一个包含某些 Field 对象的数组，这些对象反映此 Class 对象所表示的类或接口的所有可访问公共字段。
+            Class<?>[] getDeclaredClasses()
+                返回 Class 对象的一个数组，这些对象反映声明为此 Class 对象所表示的类的成员的所有类和接口。
+            Field[] getDeclaredFields()
+                返回 Field 对象的一个数组，这些对象反映此 Class 对象所表示的类或接口所声明的所有字段。
+        2. 获取构造方法
+            Constructor<?>[] getConstructors()
+                返回一个包含某些 Constructor 对象的数组，这些对象反映此 Class 对象所表示的类的所有公共构造方法。
+            Constructor<T> getConstructor(Class<?>... parameterTypes)
+                返回一个 Constructor 对象，它反映此 Class 对象所表示的类的指定公共构造方法。
+            Constructor<?>[] getDeclaredConstructors()
+                返回 Constructor 对象的一个数组，这些对象反映此 Class 对象表示的类声明的所有构造方法。
+            Constructor<T> getDeclaredConstructor(Class<?>... parameterTypes)
+                返回一个 Constructor 对象，该对象反映此 Class 对象所表示的类或接口的指定构造方法。
+        3. 获取成员方法
+             Method[] getMethods()
+                      返回一个包含某些 Method 对象的数组，这些对象反映此 Class 对象所表示的类或接口（包括
+                      那些由该类或接口声明的以及从超类和超接口继承的那些的类或接口）的公共 member 方法。
+             Method getMethod(String name, Class<?>... parameterTypes)
+                      返回一个 Method 对象，它反映此 Class 对象所表示的类或接口的指定公共成员方法。
+             Method[] getDeclaredMethods()
+                      返回 Method 对象的一个数组，这些对象反映此 Class 对象表示的类或接口声明的所有方法，
+                      包括公共、保护、默认（包）访问和私有方法，但不包括继承的方法。
+             Method getDeclaredMethod(String name, Class<?>... parameterTypes)
+                      返回一个 Method 对象，该对象反映此 Class 对象所表示的类或接口的指定已声明方法
+        4. 获取类名
+             String getName()
+                      以 String 的形式返回此 Class 对象所表示的实体（类、接口、数组类、基本类型或 void）名称。

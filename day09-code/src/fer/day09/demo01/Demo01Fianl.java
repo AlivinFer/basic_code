@@ -18,14 +18,14 @@ public class Demo01Fianl {
 
     public static void main(String[] args) {
         int num1 = 10;
-        System.out.println(num1);
+        System.out.println(num1); // 10
         num1 = 20;
-        System.out.println(num1);
+        System.out.println(num1); // 20
 
         // 一旦使用 final 来修饰局部变量，那么这个变量就不能进行更改
         // 一次赋值，众生不变
         final int num2 = 100;
-        System.out.println(num2);
+        System.out.println(num2); // 100
 
         // 错误写法
 //        num2 = 200;

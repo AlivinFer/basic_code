@@ -24,6 +24,6 @@ public class Demo01Interface {
 
     public static void main(String[] args) {
         Zi zi = new Zi();
-        zi.method();
+        zi.method(); // 父类方法
     }
 }

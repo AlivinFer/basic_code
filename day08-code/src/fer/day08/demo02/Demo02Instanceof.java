@@ -8,8 +8,8 @@ package fer.day08.demo02;
 /*
 如何才能知道一个父类的引用对象，本来是什么子类？
 格式：
-对象 instanceof 类名称
-这将会得到一个 boolean 值结果，也就是判断前面的对象能不能当做后面类型的实例
+    对象 instanceof 类名称
+    这将会得到一个 boolean 值结果，也就是判断前面的对象能不能当做后面类型的实例
  */
 
 public class Demo02Instanceof {
@@ -22,12 +22,12 @@ public class Demo02Instanceof {
         // 判断一下父类引用 animal 本来是不是 Dog
         if (animal instanceof Dog) {
             Dog dog = (Dog) animal;
-            dog.watchHouse();
+            dog.watchHouse(); // 猫吃鱼
         }
         // 判断一下父类引用 animal 本来是不是 Cat
         if (animal instanceof Cat) {
             Cat cat = (Cat) animal;
-            cat.catchMouse();
+            cat.catchMouse(); // 猫抓老鼠
         }
     }
 }

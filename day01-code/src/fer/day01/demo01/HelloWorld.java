@@ -1,10 +1,10 @@
 package fer.day01.demo01;
-// Alt+/ 快速提示
 
 
 /**
  * @author Alivin Fer
  */
+
 public class HelloWorld {
     /**
      * 简写 psvm 快速生成

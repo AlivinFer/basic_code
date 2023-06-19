@@ -3,12 +3,9 @@ package fer.day01.demo02;
 /**
  * @author: Alivin Fer
  * @date: 2020/9/29 12:19
+ *
+ * 对于 void 没有返回值的方法，只能单独，不能打印或者赋值使用
  **/
-
-/*
-    对于 void 没有返回值的方法，只能单独，不能打印或者赋值使用
- */
-
 
 public class Demo04MethodReturn {
     public static void main(String[] args) {

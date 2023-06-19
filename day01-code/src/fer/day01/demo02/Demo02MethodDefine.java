@@ -33,7 +33,7 @@ return：两个作用，第一停止当前方法，第二将后面的返回值�
 public class Demo02MethodDefine {
     public static void main(String[] args) {
         // 单独调用
-        sum(10, 20);
+        sum(10, 20, 5);
         System.out.println("========");
 
         // 打印调用
@@ -47,7 +47,11 @@ public class Demo02MethodDefine {
     }
 
     public static int sum(int a, int b){
-        int result = a + b;
-        return result;
+        return a + b;
+    }
+
+    public  static void sum(int a, int b, int c){
+        int res = a + b + c;
+        System.out.println("res = " + res);
     }
 }

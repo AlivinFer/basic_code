@@ -18,14 +18,20 @@ public class Demo03MethodParam {
         method2();
     }
 
-    // 有参数，必须知道两个数字各自是多少，否则无法进行计算
+    /**
+     * 有参数，必须知道两个数字各自是多少，否则无法进行计算
+     */
     public static void method1(int a, int b){
         int result = a * b;
         System.out.println("结果是：" + result);
     }
-    // 无参数，自己能单独完成任务
+
+    /**
+     *  无参数，自己能单独完成任务
+     */
     public static void method2(){
-        for (int i = 0; i < 10; i++) {
+        int n = 10;
+        for (int i = 0; i < n; i++) {
             System.out.print("*");
         }
     }

@@ -3,10 +3,11 @@ package fer.day02.demo01;
 /**
  * @author: Alivin Fer
  * @date: 2020/10/9 20:03
+ *
+ * 静态初始化基本格式
+ * 数据类型[] 数组名称 = new 数据类型[]{元素1, 元素2, 元素3, ...};
  **/
 
-// 静态初始化基本格式
-// 数据类型[] 数组名称 = new 数据类型[]{元素1, 元素2, 元素3, ...};
 
 public class Demo02Array {
     public static void main(String[] args) {

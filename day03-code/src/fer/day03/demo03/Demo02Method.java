@@ -3,17 +3,16 @@ package fer.day03.demo03;
 /**
  * @author: Alivin Fer
  * @date: 2020/10/11 21:04
+ *
+ * 面向对象三大特征：封装、继承、多态
+ *
+ * 封装性在Java当中的体现
+ * 1. 方法就是一种封装
+ * 2. 关键字private也是一种封装
+ *
+ * 封装就是将一些细节信息隐藏起来，对于外界不可见
  **/
 
-/*
-面向对象三大特征：封装、继承、多态
-
-封装性在Java当中的体现
-1. 方法就是一种封装
-2. 关键字private也是一种封装
-
-封装就是将一些细节信息隐藏起来，对于外界不可见
- */
 public class Demo02Method {
     public static void main(String[] args) {
         int[] array = {5, 10, 25, 99, 20, 11};
@@ -24,9 +23,9 @@ public class Demo02Method {
     
     public static int getMax(int[] array){
         int max = array[0];
-        for (int i = 0; i < array.length; i++) {
-            if(array[i] > max){
-                max = array[i];
+        for (int j : array) {
+            if (j > max) {
+                max = j;
             }
         }
         return max;

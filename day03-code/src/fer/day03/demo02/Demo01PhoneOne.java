@@ -9,18 +9,25 @@ public class Demo01PhoneOne {
     public static void main(String[] args) {
         Phone one = new Phone();
 
-        System.out.println(one.brand); // null
-        System.out.println(one.color); // null
-        System.out.println(one.price); // 0.0
+        /*
+          默认值 对象默认值为null
+          null、null、0.0
+         */
+        System.out.println(one.brand);
+        System.out.println(one.color);
+        System.out.println(one.price);
         System.out.println("========");
 
         one.brand = "苹果";
         one.color = "玫瑰金";
         one.price = 8888.0;
 
-        System.out.println(one.brand); // 苹果
-        System.out.println(one.color); // 玫瑰金
-        System.out.println(one.price); // 8888.0
+        // 苹果
+        System.out.println(one.brand);
+        // 玫瑰金
+        System.out.println(one.color);
+        // 8888.0
+        System.out.println(one.price);
         System.out.println("========");
 
         one.call("能年玲奈");

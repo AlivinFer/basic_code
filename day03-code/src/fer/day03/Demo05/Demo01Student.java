@@ -13,7 +13,8 @@ public class Demo01Student {
         System.out.println("姓名：" + stu1.getName() + ", 年龄：" + stu1.getAge());
         System.out.println("=========");
 
-        Student stu2 = new Student("能年", 27);  // 全参构造
+        // 全参构造
+        Student stu2 = new Student("能年", 27);
 
         System.out.println("姓名：" + stu2.getName() + ", 年龄：" + stu2.getAge());
 

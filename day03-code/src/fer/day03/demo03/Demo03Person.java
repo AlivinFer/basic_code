@@ -11,7 +11,8 @@ public class Demo03Person {
         person.show();
 
         person.name = "能年玲奈";
-//        person.age = -20;  // 直接访问 private 内容，错误写法！
+        // 直接访问 private 内容，错误写法！
+//        person.age = -20;
         person.setAge(-10);
         person.setAge(20);
         person.show();

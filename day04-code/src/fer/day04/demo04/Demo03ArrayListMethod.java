@@ -5,21 +5,19 @@ import java.util.ArrayList;
 /**
  * @author: Alivin Fer
  * @date: 2020/10/15 20:18
+ *
+ * ArrayList 当中常用方法有：
+ *
+ * public boolean add(E e): 向集合当中添加元素，参数类型和泛型一致
+ * 备注：对于 ArrayList 集合来说，add 添加动作一定是成功的，所以返回值可用可不用
+ * 但是对于其他集合来说，add 添加动作不一定成功
+ *
+ * public E get(int index): 从集合当中获取元素，参数是索引编号，返回值就是对应位置的元素
+ *
+ * public E remove(int index): 从集合当中删除元素，参数是索引编号，返回值就是被删除掉的元素
+ *
+ * public int size(): 获取集合的尺寸长度，返回值就是集合当中包含的元素个数
  **/
-
-/*
-ArrayList 当中常用方法有：
-
-public boolean add(E e): 向集合当中添加元素，参数类型和泛型一致
-备注：对于 ArrayList 集合来说，add 添加动作一定是成功的，所以返回值可用可不用
-但是对于其他集合来说，add 添加动作不一定成功
-
-public E get(int index): 从集合当中获取元素，参数是索引编号，返回值就是对应位置的元素
-
-public E remove(int index): 从集合当中删除元素，参数是索引编号，返回值就是被删除掉的元素
-
-public int size(): 获取集合的尺寸长度，返回值就是集合当中包含的元素个数
- */
 
 public class Demo03ArrayListMethod {
     public static void main(String[] args) {
@@ -54,10 +52,6 @@ public class Demo03ArrayListMethod {
         for (String s : list) {
             System.out.println(s);
         }
-
-
-
-
     }
 
 }

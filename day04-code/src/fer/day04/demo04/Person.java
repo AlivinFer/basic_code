@@ -9,11 +9,20 @@ public class Person {
     private String name;
     private int age;
 
-    // 无参构造
+    /**
+     * 无参构造
+     */
     public Person() {
     }
 
-    // 有参构造
+    /**
+     * 有参构造
+     *
+     * @param   name
+     *          名称
+     * @param   age
+     *          年龄
+     */
     public Person(String name, int age) {
         this.name = name;
         this.age = age;

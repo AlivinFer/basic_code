@@ -3,14 +3,11 @@ package fer.day04.demo04;
 /**
  * @author: Alivin Fer
  * @date: 2020/10/15 16:19
+ *
+ * 定义一个数组，用来存储 3 个 Person 对象
+ *
+ * 数组的缺陷：一旦创建，程序运行期间长度不可以发生改变
  **/
-
-/*
-题目：
-定义一个数组，用来存储 3 个 Person 对象
-
-数组的缺陷：一旦创建，程序运行期间长度不可以发生改变
- */
 
 public class Demo01Array {
     public static void main(String[] args) {

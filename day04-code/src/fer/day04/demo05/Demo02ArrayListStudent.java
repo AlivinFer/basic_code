@@ -5,11 +5,10 @@ import java.util.ArrayList;
 /**
  * @author: Alivin Fer
  * @date: 2020/10/16 19:14
+ *
+ * 自定义 4 个学生对象，添加到集合，并遍历
  **/
 
-/*
-自定义 4 个学生对象，添加到集合，并遍历
- */
 public class Demo02ArrayListStudent {
     public static void main(String[] args) {
         ArrayList<Student> list = new ArrayList<>();
@@ -24,8 +23,7 @@ public class Demo02ArrayListStudent {
         list.add(three);
         list.add(four);
 
-        for (int i = 0; i < list.size(); i++) {
-            Student stu = list.get(i);
+        for (Student stu : list) {
             System.out.println("姓名：" + stu.getName() + ",年龄：" + stu.getAge());
         }
     }

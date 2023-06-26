@@ -5,12 +5,9 @@ import java.util.Scanner;
 /**
  * @author: Alivin Fer
  * @date: 2020/10/14 21:06
+ *
+ * 键盘输入两个 int 数字，并且求出和值
  **/
-
-/*
-题目：
-键盘输入两个 int 数字，并且求出和值
- */
 
 public class Demo02ScannerSum {
     public static void main(String[] args) {

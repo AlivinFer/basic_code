@@ -7,14 +7,28 @@ package fer.day05.demo03;
 
 public class Student {
 
-    private int id;  // 学号
-    private String name;  // 姓名
-    private int age;  // 年龄
-    static String room; // 教室
-    private static int idCounter = 0;  // 学号计数器，每当 new 了一个新对象的时候，计数器++
+    /**
+     * 学号
+     */
+    private int id;
+    /**
+     * 姓名
+     */
+    private String name;
+    /**
+     * 年龄
+     */
+    private int age;
+    /**
+     * 教室
+     */
+    static String room;
+    /**
+     * 学号计数器，每当 new 了一个新对象的时候，计数器++
+     */
+    private static int idCounter = 0;
 
     public Student() {
-
         idCounter++;
     }
 

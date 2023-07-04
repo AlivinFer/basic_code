@@ -3,12 +3,9 @@ package fer.day05.demo04;
 /**
  * @author: Alivin Fer
  * @date: 2020/10/25 20:02
+ *
+ * 计算在 -10.8 到 5.9 之间，绝对值大于 6 或者小于 2.1 的整数有多少个
  **/
-
-/*
-题目：
-计算在 -10.8 到 5.9 之间，绝对值大于 6 或者小于 2.1 的整数有多少个
- */
 
 public class Demo04MathPractise {
 
@@ -22,6 +19,6 @@ public class Demo04MathPractise {
                 count ++;
             }
         }
-        System.out.println("总共有：" + count);
+        System.out.println("总共有：" + count + "个");
     }
 }

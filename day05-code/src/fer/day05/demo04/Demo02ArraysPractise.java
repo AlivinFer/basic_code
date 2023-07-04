@@ -5,12 +5,9 @@ import java.util.Arrays;
 /**
  * @author: Alivin Fer
  * @date: 2020/10/25 16:21
+ *
+ * 使用 Arrays 相关的API，将一个随机字符串中的所有字符升序排列，并倒序打印
  **/
-
-/*
-题目：
-使用 Arrays 相关的API，将一个随机字符串中的所有字符升序排列，并倒序打印
- */
 
 public class Demo02ArraysPractise {
 

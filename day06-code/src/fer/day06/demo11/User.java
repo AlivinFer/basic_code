@@ -7,8 +7,14 @@ package fer.day06.demo11;
 
 public class User {
 
-    private String name;  // 姓名
-    private int money; // 余额，也就是当前用户拥有的钱数
+    /**
+     * 姓名
+     */
+    private String name;
+    /**
+     * 余额，也就是当前用户拥有的钱数
+     */
+    private int money;
 
     public User() {
     }

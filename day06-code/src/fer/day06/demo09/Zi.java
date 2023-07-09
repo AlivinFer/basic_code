@@ -16,9 +16,12 @@ public class Zi extends Fu {
     }
 
     public void show() {
+        // 5
         int num = 5;
-        System.out.println(num);  // 5
-        System.out.println(this.num);  // 20
-        System.out.println(super.num);  // 10
+        System.out.println(num);
+        // 20
+        System.out.println(this.num);
+        // 10
+        System.out.println(super.num);
     }
 }

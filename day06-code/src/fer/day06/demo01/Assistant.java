@@ -6,4 +6,10 @@ package fer.day06.demo01;
  **/
 
 public class Assistant extends Employee {
+    String name = "assistant";
+
+    @Override
+    public void method() {
+        System.out.println("Assistant 类方法执行!");
+    }
 }

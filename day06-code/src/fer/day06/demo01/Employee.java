@@ -6,10 +6,10 @@ package fer.day06.demo01;
  **/
 
 public class Employee {
-    String name = "剑圣";
-    long ID = 101;
+    String name = "employee";
+    long iD = 101;
 
     public void method() {
-        System.out.println("方法执行!");
+        System.out.println("Employee 类方法执行!");
     }
 }

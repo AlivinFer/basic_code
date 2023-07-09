@@ -16,7 +16,7 @@
     - druid
 12. Spring JDBC
 
-### 基础语法-对应代码工程
+## 基础语法-对应代码工程
 
 - day01-code
   - demo01
@@ -71,15 +71,48 @@
   - demo04
     - 数组
     - ArrayList
+- day05-code
+  - demo01
+    - String 类
+    - 字符串常量池
+  - demo02
+    - 字符串比较 == 和 equals
+    - String 常用方法
+  - demo03
+    - static 关键字
+  - demo04
+    - Arrays 工具类方法
+- day06-code
+  - demo01
+    - 继承
+  - demo02
+    - 父类与自类变量同名处理
+    - 重写
+  - demo03
+    - 重写和重载
+  - demo04
+    - 父类与子类
+  - demo05
+    - 继承原则
+  - demo06
+    - 父类和子类构造方法
+  - demo07
+    - super 用法
+  - demo08
+    - this 用法
+  - demo09
+    - 继承注意点
+  - demo10
+    - 抽象类
+  - demo11
+    - 案例实现
 
 ## 学习中遇到的一些问题
 
-- [ ] git 报错【10054】 **OpenSSL SSL_read: Connection was reset, errno 10054**
+- [x] git 报错【10054】 **OpenSSL SSL_read: Connection was reset, errno 10054**
 
-  git 提交或更新代码报错，修改设置接触 ssl 验证
+  git 提交或更新代码报错，修改设置 ssl 验证为 false
 
   ```shell
   git config --global http.sslVerify "false"
   ```
-
-- [ ] 

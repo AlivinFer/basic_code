@@ -3,9 +3,10 @@ package fer.day06.demo05;
 /**
  * @author: Alivin Fer
  * @date: 2020/10/26 18:41
+ *
+ * Phone 类
  **/
 
-// 本来的老款手机
 public class Phone {
 
     public void call() {

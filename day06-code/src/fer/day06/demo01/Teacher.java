@@ -6,5 +6,11 @@ package fer.day06.demo01;
  **/
 
 public class Teacher extends Employee {
-    long slary = 20000;
+    long salary = 20000;
+    String name = "小郭";
+
+    @Override
+    public void method() {
+        System.out.println("Teacher 类方法执行!");
+    }
 }

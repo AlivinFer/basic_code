@@ -17,10 +17,19 @@ public interface MyInterfaceA {
 //
 //     }
 
+    /**
+     * 接口方法A
+     */
     public abstract void methodA();
 
+    /**
+     * 接口方法Abs
+     */
     public abstract void methodAbs();
 
+    /**
+     * 接口默认方法
+     */
     public default void methodDefault() {
         System.out.println("接口的默认方法");
     }

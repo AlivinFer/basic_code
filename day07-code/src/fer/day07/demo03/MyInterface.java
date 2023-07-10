@@ -5,15 +5,16 @@ package fer.day07.demo03;
  * @date: 2020/10/29 20:00
  **/
 
-/*
-这个子接口一共有 4 个方法
-
- */
-
 public interface MyInterface extends MyInterfaceA, MyInterfaceB {
 
+    /**
+     * 抽象接口方法
+     */
     public abstract void method();
 
+    /**
+     * 重写继承接口A和B方法
+     */
     @Override
     default void methodDefault() {
 

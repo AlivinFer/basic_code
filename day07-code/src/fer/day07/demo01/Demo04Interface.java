@@ -5,7 +5,7 @@ package fer.day07.demo01;
  * @date: 2020/10/29 16:32
  **/
 
-public class demo04Interface {
+public class Demo04Interface {
 
     public static void main(String[] args) {
         MyInterfacePrivateB.methodStatic1();

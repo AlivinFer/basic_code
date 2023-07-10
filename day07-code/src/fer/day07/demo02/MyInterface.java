@@ -6,6 +6,9 @@ package fer.day07.demo02;
  **/
 public interface MyInterface {
 
+    /**
+     * 接口默认方法
+     */
     public default void method() {
         System.out.println("接口默认方法");
     }

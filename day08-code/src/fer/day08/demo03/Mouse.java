@@ -5,8 +5,7 @@ package fer.day08.demo03;
  * @date: 2020/11/5 20:27
  **/
 
-// 鼠标就是一个 USB 设备
-public class Mouse implements USB {
+public class Mouse implements Usb {
     @Override
     public void open() {
         System.out.println("打开鼠标");

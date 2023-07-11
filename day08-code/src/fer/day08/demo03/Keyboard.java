@@ -5,8 +5,7 @@ package fer.day08.demo03;
  * @date: 2020/11/5 20:27
  **/
 
-// 键盘就是一个 USB 设备
-public class Keyboard implements USB {
+public class Keyboard implements Usb {
 
     @Override
     public void open() {

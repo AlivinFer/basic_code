@@ -7,5 +7,8 @@ package fer.day08.demo02;
 
 public abstract class Animal {
 
+    /**
+     * 动物类抽象共有的方法
+     */
     public abstract void eat();
 }

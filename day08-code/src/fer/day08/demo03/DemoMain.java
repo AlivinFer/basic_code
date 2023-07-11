@@ -14,26 +14,29 @@ public class DemoMain {
 
         // 准备一个鼠标，供电脑使用
 //        Mouse mouse = new Mouse();
-        // 首先向上转型
-        USB usbMouse = new Mouse();  // 左边是接口，右边是实现类（多态写法）
+        // 首先向上转型 左边是接口，右边是实现类（多态写法）
+        Usb usbMouse = new Mouse();
         // 参数是 USB 类型
         computer.useDevice(usbMouse);
 
-        // 创建一个 USB 键盘
-        Keyboard keyboard = new Keyboard();  // 没有使用多态的写法
-        // 方法参数是 USB 类型，传递进去的是实现类对象
-        computer.useDevice(keyboard);  // 正确写法,也发生了向上模型
-//        computer.useDevice(new Keyboard());  // 也是正确写法
+        // 创建一个 USB 键盘 没有使用多态的写法
+        Keyboard keyboard = new Keyboard();
+        // 方法参数是 USB 类型，传递进去的是实现类对象 正确写法,也发生了向上模型
+        computer.useDevice(keyboard);
+        computer.useDevice(new Keyboard());
         // 使用子类对象，匿名对象，也可以
-//        computer.useDevice(new Keyboard());
+        computer.useDevice(new Keyboard());
 
         computer.powerOff();
         System.out.println("==============");
 
-        method(10.0);  // 正确写法，double --> double
-        method(10);  // 正确写法，int -- > double
+        // 正确写法，double --> double
+        method(10.0);
+        // 正确写法，int -- > double
+        method(10);
         int a = 30;
-        method(a);  // 正确写法，int -- > double
+        // 正确写法，int -- > double
+        method(a);
     }
 
     public static void method(double num) {

@@ -3,27 +3,27 @@ package fer.day09.demo04;
 /**
  * @author: Alivin Fer
  * @date: 2020/11/7 15:14
+ *
+ * 局部内部类，如果希望访问所在方法的局部变量，那么这个局部变量必须是【有效 final 的】
+ *
+ * 另外：从 java 8+ 开始，只要局部变量是不变的，那么 final 关键字可以省略
+ *
+ * 原因：
+ * 1. new 出来的对象在堆内存当中
+ * 2. 局部变量是跟着方法走的，在栈内存当中
+ * 3. 方法运行结束之后，立刻出栈，局部变量就会立刻消失
+ * 4. 但是 new 出来的对象会在堆当中持续存在，直到垃圾回收消失
  **/
-
-/*
-局部内部类，如果希望访问所在方法的局部变量，那么这个局部变量必须是【有效 final 的】
-
-备足：从 java 8+ 开始，只要局部变量事实不变，那么 final 关键字可以省略
-
-原因：
-1. new 出来的对象在堆内存当中
-2. 局部变量是跟着方法走的，在栈内存当中
-3. 方法运行结束之后，立刻出栈，局部变量就会立刻消失
-4. 但是 new 出来的对象会在堆当中持续存在，直到垃圾回收消失
- */
 
 public class MyOuter {
 
     public void methodOuter() {
 //        final int num = 10;  // 默认是 final
-        int num = 10; // 所在方法的局部变量
+        // 所在方法的局部变量
+        int num = 10;
 
         class MyInner {
+            final int num = 20;
             public void methodInner() {
                 System.out.println(num);
             }

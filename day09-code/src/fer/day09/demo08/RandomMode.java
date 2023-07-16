@@ -22,8 +22,8 @@ public class RandomMode implements OpenMode {
         // 此时还需要再发 2 个红包
         // 此时的再发范围应该是 0.01元~3.34元（取不到右边，剩下 0.01）
 
-        // 公式：1 + random.nextInt(leftMoney / leftCount * 2);
-        Random r = new Random();  // 首先创建一个随机数生成器
+        // 公式：1 + random.nextInt(leftMoney / leftCount * 2); 首先创建一个随机数生成器
+        Random r = new Random();
         // 额外定义两个变量，分别代表剩下多少钱，剩下多少份
         int leftMoney = totalMoney;
         int leftCount = totalCount;
@@ -32,8 +32,10 @@ public class RandomMode implements OpenMode {
         for (int i = 0; i < totalCount - 1; i++) {
             // 按照公式生成随机金额
             int money = r.nextInt(leftMoney / leftCount * 2) + 1;
-            list.add(money);  // 将一个随机红包放入集合
-            leftMoney -= money;  // 剩下的金额越发越少
+            // 将一个随机红包放入集合
+            list.add(money);
+            // 剩下的金额越发越少
+            leftMoney -= money;
             leftCount -= 1;
         }
         list.add(leftMoney);

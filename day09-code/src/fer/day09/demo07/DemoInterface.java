@@ -3,16 +3,14 @@ package fer.day09.demo07;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
-java.util.List 正是 ArrayList 所实现的接口
- */
 
 /**
  * @author: Alivin Fer
  * @date: 2020/11/8 17:00
+ *
+ * 接口作为方法的参数或返回值
  **/
 
-// 接口作为方法的参数或返回值
 public class DemoInterface {
 
     public static void main(String[] args) {
@@ -21,8 +19,8 @@ public class DemoInterface {
         List<String> list = new ArrayList<>();
 
         List<String> result = addName(list);
-        for (int i = 0; i < result.size(); i++) {
-            System.out.println(result.get(i));
+        for (String s : result) {
+            System.out.println(s);
         }
     }
 

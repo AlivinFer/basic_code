@@ -9,7 +9,9 @@ import fer.day09.demo02.MyClass;
 public class MySon extends MyClass {
 
     public void methodSon() {
-        System.out.println(super.num2);  // protected
-        System.out.println(super.num3);  // public
+        // protected
+        System.out.println(super.num2);
+        // public
+        System.out.println(super.num3);
     }
 }

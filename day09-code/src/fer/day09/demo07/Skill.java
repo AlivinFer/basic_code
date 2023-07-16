@@ -7,5 +7,8 @@ package fer.day09.demo07;
 
 public interface Skill {
 
+    /**
+     * 使用方法
+     */
     void use();
 }

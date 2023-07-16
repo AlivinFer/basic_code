@@ -3,14 +3,24 @@ package fer.day09.demo06;
 /**
  * @author: Alivin Fer
  * @date: 2020/11/7 21:22
+ *
+ * 游戏当中的英雄角色类
  **/
 
-// 游戏当中的英雄角色类
 public class Hero {
 
-    private String name;  // 英雄名字
-    private int age;  // 年龄
-    private Weapon weapon;  // 英雄的武器
+    /**
+     * 英雄名字
+     */
+    private String name;
+    /**
+     * 年龄
+     */
+    private int age;
+    /**
+     * 英雄的武器
+     */
+    private Weapon weapon;
 
     public Hero() {
     }

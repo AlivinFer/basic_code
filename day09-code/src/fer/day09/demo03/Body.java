@@ -6,7 +6,9 @@ package fer.day09.demo03;
  **/
 public class Body {
 
-    // 外部类的成员变量
+    /**
+     * 外部类的成员变量
+     */
     private String name;
 
     public Body() {
@@ -24,7 +26,9 @@ public class Body {
         this.name = name;
     }
 
-    // 定义成员内部类
+    /**
+     * 定义成员内部类
+     */
     public class Heart {
 
         public void beat() {
@@ -33,7 +37,9 @@ public class Body {
         }
     }
 
-    // 外部类的方法
+    /**
+     * 外部类的方法
+     */
     public void methodBody() {
         Heart heart = new Heart();
         heart.beat();

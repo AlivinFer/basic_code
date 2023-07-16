@@ -7,7 +7,10 @@ package fer.day09.demo06;
 
 public class Weapon {
 
-    private String code;  // 武器的代号
+    /**
+     * 武器的代号
+     */
+    private String code;
 
     public Weapon() {
     }

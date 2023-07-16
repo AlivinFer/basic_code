@@ -7,8 +7,14 @@ package fer.day09.demo07;
 
 public class Hero {
 
-    private String name;  // 英雄的
-    private Skill skill;  // 英雄的技能 (接口作为成员变量类型)
+    /**
+     * 英雄名称
+     */
+    private String name;
+    /**
+     * 英雄技巧(接口作为成员变量类型)
+     */
+    private Skill skill;
 
     public Hero() {
     }

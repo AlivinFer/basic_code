@@ -9,6 +9,7 @@ import fer.day09.demo02.MyClass;
 public class Stranger {
 
     public void method() {
-        System.out.println(new MyClass().num3);  // public
+        // public
+        System.out.println(new MyClass().num3);
     }
 }
